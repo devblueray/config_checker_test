@@ -8,5 +8,5 @@ jobs:
       - name: Config Checker
         uses: devblueray/config_checker@main
         with:
-          webhook: {{secrets.SLACK_WEBHOOK_URL}}
+          webhook: ${{secrets.SLACK_WEBHOOK_URL}}
           elixir-config: ./elixir-config
