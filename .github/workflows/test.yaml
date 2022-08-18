@@ -5,8 +5,13 @@ jobs:
     name: Test Config Checker
     runs-on: ubuntu-latest
     steps:
+      - name: Print working directory
+        run: pwd
+      - name: List working directory
+        run: ls
       - name: Config Checker
         uses: devblueray/config_checker@main
         with:
           webhook: ${{secrets.SLACK_WEBHOOK_URL}}
           elixir-config: ./elixir-config
+          envsource: https://doc.veeps-team.com/create_output?env=stg
