@@ -14,4 +14,4 @@ jobs:
         with:
           webhook: ${{secrets.SLACK_WEBHOOK_URL}}
           elixir-config: ./elixir-config
-          envsource: https://doc.veeps-team.com/create_output?env=stg
+          envsource: https://doc.tools.veeps-team.com/create_output?env=stg
